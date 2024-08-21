@@ -1,0 +1,56 @@
+@import '../styles/colors';
+
+.navbar {
+    //background: $primary-color;
+    color: #111010;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+    .logo img {
+      height: 10px;
+    }
+  
+    .nav-links {
+      list-style: none;
+      display: flex;
+  
+      li {
+        margin-left: 20px;
+      }
+  
+      a {
+        color: $white;
+        text-decoration: none;
+        font-size: 18px;
+      }
+    }
+  }
+  .navbar {
+    background-color: #ffffff; // Adjust as needed
+    padding: 10px;
+  }
+  
+  .navbar ul {
+    list-style-type: none; // Remove default bullet points
+    margin: 0;
+    padding: 0;
+    display: flex; // Use flexbox to align items horizontally
+  }
+  
+  .navbar li {
+    margin-right: 20px; // Adjust spacing between items as needed
+  }
+  
+  .navbar a {
+    color: #0e0b0b; // Link color
+    text-decoration: none; // Remove underline from links
+    padding: 10px 15px;
+    display: block; // Make the entire area clickable
+    transition: background-color 0.3s; // Smooth transition for hover effect
+  }
+  
+  .navbar a:hover {
+    background-color: #ebeaea; // Background color on hover
+  }

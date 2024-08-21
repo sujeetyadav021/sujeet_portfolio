@@ -1,0 +1,18 @@
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+    }
+
+    button {
+      background-color: #333;
+      color: #aa6e6e;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+    }
+  }
