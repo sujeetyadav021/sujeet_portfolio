@@ -37,7 +37,7 @@ const Projects = () => {
               
               code="https://github.com/sujeetyadav021/weather_forecasting"
               //demo="Demo link"
-              icon="💻"
+              icon="☀️🌧️❄️"
             />
 
             <ProjectBox
@@ -51,7 +51,7 @@ const Projects = () => {
               techno1="Python"
               code="https://github.com/sujeetyadav021/p2p_ride_sharing"
               //demo="Demo link"
-              icon="💻"
+              icon="🚕"
             />
           </div>
         </div>
