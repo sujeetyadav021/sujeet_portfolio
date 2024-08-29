@@ -25,6 +25,34 @@ const Projects = () => {
               //demo="Demo link"
               icon="💻"
             />
+
+            <ProjectBox
+              title="Weather Forecasting"
+              img={ProjectImg}
+              date="April 2024"
+              description=" Developed a weather forecasting application using Python and Streamlit. Utilized OpenWeatherMap API to fetch real-time
+ weather data & Implemented data visualization with Matplotlib for clear presentation. Applied machine learning techniques
+ for weather prediction, enhancing accuracy. Collaborated with team members to refine algorithms and improve UI"
+              techno1="Python"
+              
+              code="https://github.com/sujeetyadav021/weather_forecasting"
+              //demo="Demo link"
+              icon="💻"
+            />
+
+            <ProjectBox
+              title="PeertoPeer Ride Sharing"
+              img={ProjectImg}
+              date="November 2023"
+              description="Implemented decentralized ride-sharing platform using blockchain technology. Enabled secure and transparent transactions
+ between riders and drivers. Developed smart contracts for automated payment and dispute resolution. Utilized Ethereum
+ blockchain for decentralized consensus and data integrity. Enhanced user privacy and trust through blockchain encryption
+ techniqu"
+              techno1="Python"
+              code="https://github.com/sujeetyadav021/p2p_ride_sharing"
+              //demo="Demo link"
+              icon="💻"
+            />
           </div>
         </div>
       </div>

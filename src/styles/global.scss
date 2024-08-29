@@ -11,23 +11,22 @@
   }
 
   section {
-    padding: 60px 20px; /* Adjust as needed */
-    min-height: 100vh; /* Ensure each section takes up full viewport height */
-    box-sizing: border-box; /* Include padding in height calculation */
+    padding: 60px 20px; 
+    min-height: 100vh; 
+    box-sizing: border-box; 
   }
   
   @media (max-width: 900px) {
     section {
-      padding: 40px 15px; /* Reduce padding on smaller screens */
+      padding: 40px 15px; 
     }
   
     .navbar {
-      padding: 15px 30px; /* Adjust navbar padding for smaller screens */
-    }
+      padding: 15px 30px; 
   }
   
   @media (max-width: 600px) {
     section {
-      padding: 30px 10px; /* Further reduce padding for very small screens */
+      padding: 30px 10px; 
     }
   }

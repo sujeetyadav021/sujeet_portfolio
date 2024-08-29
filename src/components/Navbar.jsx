@@ -14,6 +14,10 @@ const Navbar = () => {
     setHamburger(!hamburger);
   };
 
+  const handleLinkClick = () => {
+    setHamburger(false); // Close the hamburger menu
+  };
+
   const navlinks = [
     { name: "Home", link: "home" },
     { name: "About", link: "about" },
@@ -44,18 +48,15 @@ const Navbar = () => {
           ))}
         </ul>
         <div className="hamburger-icon" onClick={hamburgerMenu}>
-          <IconMenu2 width={30} height={30} />
+          {hamburger ? <IconX width={30} height={30} /> : <IconMenu2 width={30} height={30} />}
         </div>
       </nav>
 
       {/* Mobile nav */}
       <div className={`mobile-nav ${hamburger ? "open-menu" : "closed-menu"}`}>
-        <span onClick={hamburgerMenu}>
-          <IconX width={30} height={30} />
-        </span>
         <ul>
           {navlinks.map((item) => (
-            <li key={item.name} onClick={hamburgerMenu}>
+            <li key={item.name}>
               <Link
                 to={item.link}
                 smooth={true}
@@ -63,6 +64,7 @@ const Navbar = () => {
                 spy={true}
                 exact="true"
                 offset={-70}
+                onClick={handleLinkClick} // Close the menu and navigate
               >
                 {item.name}
               </Link>

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import emailjs from 'emailjs-com';
-import { ToastContainer, toast } from 'react-toastify'; // Import ToastContainer and toast
-import 'react-toastify/dist/ReactToastify.css'; // Import Toastify CSS
+import { ToastContainer, toast } from 'react-toastify'; 
+import 'react-toastify/dist/ReactToastify.css'; 
 import { FaMapMarkerAlt, FaEnvelope } from 'react-icons/fa';
 import '../styles/Contact.scss';
 
@@ -22,10 +22,10 @@ const Contact = () => {
 
     emailjs.send('service_68fiq95', 'template_iu4jizq', formData, '10HL6F3HjEcvrq2p6')
       .then((result) => {
-        toast.success('Message sent successfully!'); // Success toast
+        toast.success('Message sent successfully!'); 
         setFormData({ name: '', email: '', message: '' });
       }, (error) => {
-        toast.error('Failed to send message, please try again.'); // Error toast
+        toast.error('Failed to send message, please try again.'); 
       });
   };
 

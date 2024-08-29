@@ -4,32 +4,32 @@
 
 .about {
   background-color: #f9f9f9;
-  padding: 5rem 0; // Top and bottom padding for the section 
+  padding: 5rem 0;
 
   @media (max-width: 1020px) {
-    padding: 20rem 0; // Adjust padding for medium screens 
+    padding: 20rem 0; 
   }
 
   @media (max-width: 600px) {
-    padding: 40rem 0; //Adjust padding for smaller screens 
+    padding: 40rem 0; 
   }
 }
 
 .about-content {
   display: grid;
   grid-template-columns: 1fr 2fr;
-  //gap: 1rem; // Space between grid items 
+  //gap: 1rem; 
   //justify-content: center; 
   align-items: center;
 
   @media (max-width: 1020px) {
-    grid-template-columns: 1fr; // Stack content vertically 
+    grid-template-columns: 1fr; 
     text-align: center;
-    gap: 1rem; // Smaller gap on medium screens
+    gap: 1rem; 
   }
 
   @media (max-width: 600px) {
-    gap: 1rem; // Smaller gap for small screens
+    gap: 1rem; 
   }
 }
 
@@ -46,7 +46,7 @@
   }
 
   @media (max-width: 600px) {
-    padding: 500 10rem; // Padding on smaller screens 
+    padding: 500 10rem; 
   }
 
   h3 {
@@ -69,7 +69,7 @@
 
 .img-side {
   display: flex;
-  justify-content: center; // Center image horizontally 
+  justify-content: center; 
 
   &__main-img {
     width: 100%;
