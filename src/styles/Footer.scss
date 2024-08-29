@@ -2,7 +2,7 @@
 
 footer {
   background-color: #4b4b4bdc;
-  padding: 0.8rem 0;
+  padding: 0.8rem 0.5rem;
   width: 100%;
   position: relative;
   margin-top: auto;
@@ -25,7 +25,8 @@ footer {
       justify-content: center;
       padding-right: 0;
       padding-left: 0;
-      gap: 1rem;
+      padding-bottom: 0;
+      gap: 5.9rem;
       text-align: center;
     }
 
@@ -37,12 +38,12 @@ footer {
       margin-top: 0.5rem;
 
       a {
-        font-size: 2.3rem;
+        font-size: 3.6rem;
         color: white;
 
         &:hover {
-          transform: scale(1.2);
-          transition: all 0.2s ease-in-out;
+          transform: scale(1.4);
+          transition: all 0.4s ease-in-out;
         }
       }
     }

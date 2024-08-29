@@ -1,9 +1,39 @@
+@import '../styles/typography';
+@import '../styles/global';
+@import '../styles/colors';
+
+
 .projects {
-    padding: 50px 0;
+  padding: 50px 0;
+  background-color: $gray-bg-color;
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  &__content {
     text-align: center;
-  
     p {
-      font-size: 18px;
-      margin-top: 20px;
+      color: $header-color;
+      font-size: $text-size;
+      text-transform: uppercase;
+      font-weight: 700;
+      margin-bottom: 1rem;
+    }
+
+    h3 {
+      font-size: $headings-size;
+      color: $black-shade;
+      margin-bottom: 3rem;
     }
   }
+
+  &__grid {
+    display: flex; /* Change to flex display */
+    flex-direction: column; /* Set flex direction to column for vertical alignment */
+    gap: 2rem; /* Space between project boxes */
+    align-items: center; /* Align items to center, adjust as needed */
+  }
+}

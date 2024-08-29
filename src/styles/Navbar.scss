@@ -1,67 +1,63 @@
+@import '../styles/typography';
+@import '../styles/global';
+@import '../styles/colors';
 
 .navbar {
   font-size: 20px;
   width: 100%;
-  height: auto;
-  padding: 25px 40px 25px 50px;
+  padding: 25px 40px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   position: fixed;
   background-color: #ffffff;
   top: 0;
   left: 0;
   box-shadow: 0px 0px 10px rgba(3, 3, 3, 0.09);
   z-index: 200;
-  align-items: center;
 
-  @media (max-width: 400px) {
-    padding: 25px 30px 25px 30px;
+  .logo {
+    cursor: pointer;
+    color: #000;
   }
 
-  ul {
+  .nav-links {
     display: flex;
     list-style: none;
     gap: 2rem;
+
+    @media (max-width: 900px) {
+      display: none; /* Hide navigation links on smaller screens */
+    }
 
     a {
       color: #000;
       text-decoration: none;
       transition: all 0.23s;
       font-weight: 600;
-
-      @media (max-width: 900px) {
-        display: none;
-      }
+      cursor: pointer; /* Add this line for pointer cursor */
 
       &:hover {
-        color: #ff6600;
+        color: $hover-color;
       }
     }
   }
 
-  .mobile-menu {
-    font-size: 2.3rem;
-    cursor: pointer;
-    display: none;
-
-    &:hover {
-      color: #ff6600;
-      transition: all 0.3s;
-    }
+  .hamburger-icon {
+    display: none; /* Initially hidden */
 
     @media (max-width: 900px) {
-      display: flex;
+      display: block; /* Show hamburger icon on smaller screens */
+      cursor: pointer;
     }
   }
-}
-
-.logo {
-  cursor: pointer;
-  color: #000;
 }
 
 .mobile-nav {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   height: 100vh;
   z-index: 300;
@@ -69,42 +65,7 @@
   position: fixed;
   top: 0;
   left: 0;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
   transition: all 0.3s ease-in-out;
-
-  span {
-    font-size: 3.3rem;
-    position: absolute;
-    top: 2rem;
-    right: 4rem;
-    cursor: pointer;
-
-    &:hover {
-      color: #ff6600;
-      transition: all 0.3s;
-    }
-  }
-
-  ul {
-    display: flex;
-    flex-direction: column;
-    gap: 4rem;
-    font-size: 2.3rem;
-    list-style: none;
-
-    a {
-      color: #000;
-      text-decoration: none;
-      font-weight: 500;
-
-      &:hover {
-        color: #ff6600;
-        transition: all 0.3s;
-      }
-    }
-  }
 
   &.closed-menu {
     left: -100%;
@@ -112,5 +73,37 @@
 
   &.open-menu {
     left: 0;
+  }
+
+  span {
+    font-size: 3.3rem;
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    cursor: pointer;
+
+    &:hover {
+      color: $hover-color;
+    }
+  }
+
+  ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    text-align: center;
+
+    a {
+      color: #000;
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 1.8rem;
+      cursor: pointer; /* Add this line for pointer cursor */
+
+      &:hover {
+        color: $hover-color;
+      }
+    }
   }
 }

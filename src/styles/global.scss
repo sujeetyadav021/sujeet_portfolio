@@ -9,3 +9,25 @@
     background-color: #ebeaea;
     color: #3a3737;
   }
+
+  section {
+    padding: 60px 20px; /* Adjust as needed */
+    min-height: 100vh; /* Ensure each section takes up full viewport height */
+    box-sizing: border-box; /* Include padding in height calculation */
+  }
+  
+  @media (max-width: 900px) {
+    section {
+      padding: 40px 15px; /* Reduce padding on smaller screens */
+    }
+  
+    .navbar {
+      padding: 15px 30px; /* Adjust navbar padding for smaller screens */
+    }
+  }
+  
+  @media (max-width: 600px) {
+    section {
+      padding: 30px 10px; /* Further reduce padding for very small screens */
+    }
+  }

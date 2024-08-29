@@ -9,7 +9,7 @@ const Footer = () => {
         <div className="container">
           <div className="footerc">
             <h3>
-               © Sujeet Yadav {new Date().getFullYear()}. All rights are reserved
+               © {new Date().getFullYear()}. All rights are reserved
             </h3>
             <div className="footerc__socials">
               <a

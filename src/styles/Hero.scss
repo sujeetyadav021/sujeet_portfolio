@@ -13,8 +13,9 @@
   color: #0a0a0a;
   padding: 20px;
   margin-top: 80px;
-  padding-bottom: 50px; 
-  // flex: 1;
+  padding-bottom: 40px;
+  padding-top: 4rem;
+
 
 
   .hero-main {
@@ -33,13 +34,14 @@
   .hero-text {
     max-width: 35rem;
     padding: 2rem;
+    margin-top: 2rem;
 
     h1 {
       font-size: 60px;
       line-height: 1.2;
       color: #0a0a0a;
       margin-bottom: 2rem;
-      margin-top: 2rem;
+
 
       @media (max-width: 500px) {
         font-size: 4rem;
@@ -67,7 +69,7 @@
     span {
       display: flex;
       gap: 1.3rem;
-      margin: 2.5rem 0;
+      margin: 2.5rem 6rem;
 
       a {
         font-size: 3rem;
@@ -118,50 +120,6 @@
 
       100% {
         border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
-      }
-    }
-  }
-
-  .skills {
-    display: flex;
-    //flex-direction: column;
-    align-items: left;
-    //margin-top: 1rem;
-    //margin-bottom: px;
-    //position: relative;
-    //padding-bottom: 20px;
-
-    p {
-      font-family: $text-font;
-      font-weight: 650;
-      color: $black-shade;
-      margin-bottom: 0.5rem;
-    }
-
-    .logos {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 1rem;
-
-      ul {
-        list-style: none;
-        display: flex;
-        flex-wrap: wrap;
-        gap: 1rem;
-
-        li {
-          cursor: pointer;
-
-          img {
-            width: 4rem;
-            height: 2.5rem;
-            transition: all ease-in-out 0.3s;
-
-            &:hover {
-              transform: translateY(-1rem);
-            }
-          }
-        }
       }
     }
   }
