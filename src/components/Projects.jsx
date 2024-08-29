@@ -8,13 +8,13 @@ const Projects = () => {
     <section id="projects" className="projects">
       <div className="container">
         <div className="projects__content">
-          <p>Portfolio</p>
+          <p>Projects</p>
           <h3>Each project is a unique piece of development 🧩</h3>
           <div className="projects__grid">
             <ProjectBox
               title="Online Examination"
               img={ProjectImg}
-              date="April 2023"
+              date="April 2023     "
               description=" Developed a comprehensive online examination platform using Python, Django. Designed an intuitive UI for easy navigation
  and enhanced user experience. Utilized MySQL database for efficient data storage and management. Ensured security
  measures to protect sensitive exam data and prevent unauthorized access. Demonstrated strong problem-solving skills and

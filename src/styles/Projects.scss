@@ -17,23 +17,25 @@
     text-align: center;
     p {
       color: $header-color;
+      font-family: $text-font;
       font-size: $text-size;
-      text-transform: uppercase;
+      //text-transform: uppercase;
       font-weight: 700;
       margin-bottom: 1rem;
     }
 
     h3 {
+      font-family: $text-font;
       font-size: $headings-size;
-      color: $black-shade;
+      color: #555555;
       margin-bottom: 3rem;
     }
   }
 
   &__grid {
-    display: flex; /* Change to flex display */
-    flex-direction: column; /* Set flex direction to column for vertical alignment */
-    gap: 2rem; /* Space between project boxes */
-    align-items: center; /* Align items to center, adjust as needed */
+    display: flex; 
+    flex-direction: column; 
+    gap: 5rem; 
+    align-items: center; 
   }
 }

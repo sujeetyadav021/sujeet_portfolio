@@ -17,8 +17,8 @@ const ProjectBox = ({ title, img, date, description, techno1, techno2, code, dem
           <span>{techno2}</span>
         </div>
         <div className="project-box__links">
-          <a href={code} target="_blank" rel="noopener noreferrer">Code</a>
-          <a href={demo} target="_blank" rel="noopener noreferrer">Demo</a>
+          <a className="button-link" href={code} target="_blank" rel="noopener noreferrer">Code</a>
+          <a className="button-link" href={demo} target="_blank" rel="noopener noreferrer">Demo</a>
         </div>
       </div>
     </div>
